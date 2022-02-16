@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "packages": [
+      "requests"
+    ]
+  },
+  "storage": {
+    "output": {
+      "tables": [
+        {
+          "destination": "out.c-01-extract.seznam",
+          "source": "seznam"
+        }
+      ],
+      "files": []
+    }
+  }
+}

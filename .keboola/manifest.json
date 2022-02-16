@@ -1,0 +1,68 @@
+{
+  "version": 2,
+  "project": {
+    "id": 6210,
+    "apiHost": "connection.north-europe.azure.keboola.com"
+  },
+  "sortBy": "id",
+  "naming": {
+    "branch": "{branch_id}-{branch_name}",
+    "config": "{component_type}/{component_id}/{config_id}-{config_name}",
+    "configRow": "rows/{config_row_id}-{config_row_name}",
+    "schedulerConfig": "schedules/{config_id}-{config_name}",
+    "sharedCodeConfig": "_shared/{target_component_id}",
+    "sharedCodeConfigRow": "codes/{config_row_id}-{config_row_name}",
+    "variablesConfig": "variables",
+    "variablesValuesRow": "values/{config_row_id}-{config_row_name}"
+  },
+  "allowedBranches": [
+    "__all__"
+  ],
+  "ignoredComponents": [],
+  "templates": {
+    "repositories": [
+      {
+        "type": "git",
+        "name": "keboola",
+        "url": "https://github.com/keboola/keboola-as-code-templates.git",
+        "ref": "main"
+      }
+    ]
+  },
+  "branches": [
+    {
+      "id": 13473,
+      "path": "main"
+    }
+  ],
+  "configurations": [
+    {
+      "branchId": 13473,
+      "componentId": "ex-generic-v2",
+      "id": "11440076",
+      "path": "extractor/ex-generic-v2/11440076-wiki",
+      "rows": []
+    },
+    {
+      "branchId": 13473,
+      "componentId": "keboola.python-transformation-v2",
+      "id": "11444647",
+      "path": "transformation/keboola.python-transformation-v2/11444647-01-extract",
+      "rows": []
+    },
+    {
+      "branchId": 13473,
+      "componentId": "keboola.snowflake-transformation",
+      "id": "11443732",
+      "path": "transformation/keboola.snowflake-transformation/11443732-01-wrangling",
+      "rows": []
+    },
+    {
+      "branchId": 13473,
+      "componentId": "keboola.wr-snowflake-blob-storage",
+      "id": "11443751",
+      "path": "writer/keboola.wr-snowflake-blob-storage/11443751-my-snowflake-data-destination",
+      "rows": []
+    }
+  ]
+}
